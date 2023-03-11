@@ -7,6 +7,28 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
-  plugins: [],
-}
+  siteMetadata: {
+    title: `Peach Bellini - Looking for 🍑?`,
+    description: `Easy peezy peachy squeezy`,
+    twitterUsername: `@peachbellini`, //TODO
+    siteUrl: `https://peachbellini.ca`, //TODO
+  },
+  plugins: [
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `8dmgiip8neyx`,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
+  ],
+};
