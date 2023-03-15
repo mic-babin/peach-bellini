@@ -7,9 +7,10 @@ export const Wrapper = styled.div`
   align-items: center;
   background-color: #f2d16f;
   background-repeat: repeat;
-  background-size: 210px 210px;
+  background-size: 215px 230px;
   max-width: 100vw;
   padding: 200px 0;
+  max-width: 100vw;
 `;
 
 export const NeonText = styled.div`

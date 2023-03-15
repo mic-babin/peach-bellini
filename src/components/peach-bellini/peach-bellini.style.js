@@ -24,12 +24,22 @@ export const H2 = styled.h2`
   line-height: 90px;
   font-family: "Lemon-Milk-Medium";
   text-transform: uppercase;
+
+  @media (max-width: 1399px) {
+    font-size: 60px;
+    line-height: 72px;
+  }
 `;
 export const Description = styled.p`
   font-family: "DIN-Regular";
   font-size: 32px;
   line-height: 40px;
   padding: 1.5rem 0;
+
+  @media (max-width: 1399px) {
+    font-size: 28px;
+    line-height: 35px;
+  }
 `;
 export const List = styled.ul`
   padding-left: 0;
@@ -58,5 +68,22 @@ export const ListItem = styled.li`
   }
 `;
 
-export const CurbTextWrapper = styled.div``;
+export const CurbTextWrapper = styled.div`
+  height: 0;
+  font-family: "Acrotype";
+  font-size: 35px;
+  line-height: 35px;
+  transform: translateY(calc(-12vw - 210px));
+
+  #text-path {
+    fill: rgb(245, 237, 150);
+    text-shadow: 0 0 6px rgba(245, 237, 150, 0.5),
+      0 0 10px rgba(245, 237, 150, 0.5), 0 0 21px rgba(245, 237, 150, 0.5);
+  }
+
+  @media (max-width: 1399px) {
+    font-size: 28px;
+    line-height: 35px;
+  }
+`;
 export const CurbText = styled.div``;

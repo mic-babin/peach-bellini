@@ -3,7 +3,7 @@ import { BG, H2, Paragraph } from "./about.style";
 
 const About = () => {
   return (
-    <BG>
+    <BG id="about">
       <div className="container">
         <div className="row">
           <H2 className="col-lg-4 mx-0">

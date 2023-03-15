@@ -18,7 +18,7 @@ import {
 const HardSeltzer = () => {
   return (
     <>
-      <Wrapper>
+      <Wrapper id="hard-seltzer">
         <Container className="container">
           <div className="row">
             <LeftCol className="col-lg-6 pe-5">
@@ -45,17 +45,17 @@ const HardSeltzer = () => {
             </LeftCol>
             <div className="col-lg-6 d-flex">
               <Can>
-                <img src={BerryCanSrc} alt="" />
+                <img className="can" src={BerryCanSrc} alt="" />
                 <img className="bubble" src={BubbleSrc} alt="" />
                 <span>🍓</span>
               </Can>
               <Can>
-                <img src={CherryCanSrc} alt="" />
+                <img className="can" src={CherryCanSrc} alt="" />
                 <img className="bubble" src={BubbleSrc} alt="" />
                 <span>🍒</span>
               </Can>
               <Can>
-                <img src={PeachCanSrc} alt="" />
+                <img className="can" src={PeachCanSrc} alt="" />
                 <img className="bubble" src={BubbleSrc} alt="" />
                 <span>
                   <img src={PeachSrc} alt="" />

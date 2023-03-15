@@ -14,6 +14,9 @@ export const H2 = styled.h2`
   line-height: 130px;
   font-family: "Lemon-Milk-Medium";
   text-transform: uppercase;
+
+  font-size: 120px;
+  line-height: 104px;
 `;
 
 export const H1 = styled.h2`
@@ -23,6 +26,11 @@ export const H1 = styled.h2`
   line-height: 60px;
   font-family: "Lemon-Milk-Medium";
   text-transform: uppercase;
+
+  @media (max-width: 1399px) {
+    font-size: 50px;
+    line-height: 50px;
+  }
 `;
 
 export const Button = styled.a`
@@ -51,6 +59,12 @@ export const Can = styled.img`
   margin-top: 150px;
   height: 700px;
   margin-bottom: 75px;
+
+  /* @media (max-width: 1399px) {
+    margin-top: 150px;
+    height: 630px;
+    margin-bottom: 75px;
+  } */
 `;
 
 export const NeonWrapper = styled.div`

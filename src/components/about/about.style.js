@@ -20,6 +20,11 @@ export const H2 = styled.h2`
     font-size: 40px;
     line-height: 40px;
   }
+
+  @media (max-width: 1399px) {
+    font-size: 60px;
+    line-height: 72px;
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -32,5 +37,10 @@ export const Paragraph = styled.p`
   &:nth-of-type(2) {
     padding-bottom: 0;
     margin-bottom: 0;
+  }
+
+  @media (max-width: 1399px) {
+    font-size: 30px;
+    line-height: 37px;
   }
 `;

@@ -2,6 +2,7 @@ import React from "react";
 import PeachCanSrc from "../../../static/Peach Bellini.png";
 import PeachSrc from "../../../static/peach.svg";
 import PinkSrc from "../../../static/pink wave.svg";
+import { useEffect, useRef } from "react";
 import {
   Wrapper,
   CurbTextWrapper,
@@ -16,12 +17,61 @@ import {
 } from "./peach-bellini.style";
 
 const PeachBellini = () => {
+  const curve = useRef();
+  const path = useRef();
+
+  useEffect(() => {
+    const h = document.documentElement;
+    const b = document.body;
+
+    if (path) {
+      document.addEventListener("scroll", (e) => {
+        console.log("scroll");
+        let percent =
+          ((h["scrollTop"] || b["scrollTop"]) /
+            ((h["scrollHeight"] || b["scrollHeight"]) - h.clientHeight)) *
+          100;
+
+        path.current.setAttribute("startOffset", percent * 30 - 1300);
+      });
+
+      return () => {};
+    }
+  }, [curve, path]);
+
   return (
     <>
-      <Wrapper>
+      <Wrapper id="peach-bellini">
         <PinkWave src={PinkSrc} alt="" />
         <CurbTextWrapper>
-          <CurbText>lovely and peachy</CurbText>
+          <CurbText>
+            <svg width="100vw" height="450px" viewBox="0 0 1200.72 89.55">
+              <path
+                ref={curve}
+                id="curve"
+                fill="transparent"
+                d="M0,160 C420,280 700,0 1200,160 "
+              ></path>
+              <text width="100%" style={{ transform: "translate3d(0,0,0)" }}>
+                <textPath
+                  style={{
+                    transform: "translate3d(0,0,0)",
+                  }}
+                  alignmentBaseline="top"
+                  xlinkHref="#curve"
+                  startOffset="-1200px"
+                  id="text-path"
+                  ref={path}
+                >
+                  lovely and peachy&nbsp;&nbsp;&nbsp;lovely and
+                  peachy&nbsp;&nbsp;&nbsp;lovely and
+                  peachy&nbsp;&nbsp;&nbsp;lovely and
+                  peachy&nbsp;&nbsp;&nbsp;lovely and
+                  peachy&nbsp;&nbsp;&nbsp;lovely and peachy
+                </textPath>
+              </text>
+            </svg>
+          </CurbText>
         </CurbTextWrapper>
         <Container className="container">
           <div className="row">
