@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Lemon-Milk-Medium";
+  src: local("Lemon-Milk-Medium"),
+    url(../fonts/LEMONMILK-Medium.otf) format("truetype");
+}
+@font-face {
+  font-family: "DIN-Medium";
+  src: local("DIN-Medium"),
+    url(../fonts/DIN\ Next\ LT\ Pro\ Medium.otf) format("truetype");
+}
+@font-face {
+  font-family: "DIN-Regular";
+  src: local("DIN-Regular"),
+    url(../fonts/DIN\ Next\ LT\ Pro\ Regular.otf) format("truetype");
+}
+@font-face {
+  font-family: "Acrotype";
+  src: local("Acrotype"), url(../fonts/acrotype\ fixed.ttf) format("truetype");
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
