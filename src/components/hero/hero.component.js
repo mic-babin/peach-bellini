@@ -17,7 +17,7 @@ const Hero = () => {
               READY-TO-DRINK
               <br /> PEACH BELLINI
             </H1>
-            <Button>Learn more</Button>
+            <Button to="../#about">Learn more</Button>
           </div>
           <div className="col-lg-6 position-relative">
             <Can src={HeroSrc} />

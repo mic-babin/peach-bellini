@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "gatsby";
 
 export const BG = styled.div`
   min-height: 100vh;
@@ -33,7 +34,7 @@ export const H1 = styled.h2`
   }
 `;
 
-export const Button = styled.a`
+export const Button = styled(Link)`
   cursor: pointer;
   margin-top: 50px;
   color: #d04638;
@@ -59,12 +60,6 @@ export const Can = styled.img`
   margin-top: 150px;
   height: 700px;
   margin-bottom: 75px;
-
-  /* @media (max-width: 1399px) {
-    margin-top: 150px;
-    height: 630px;
-    margin-bottom: 75px;
-  } */
 `;
 
 export const NeonWrapper = styled.div`
