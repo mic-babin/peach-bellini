@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Logo = styled.img`
+export const Logo = styled.div`
   max-height: 147px;
   margin-left: 80px;
   margin-top: 50px;

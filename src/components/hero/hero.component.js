@@ -1,6 +1,4 @@
 import React from "react";
-import PeachSrc from "../../../static/peach.svg";
-
 import { Bg, H2, H1, Button, Can, NeonWord, NeonWrapper } from "./hero.styles";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -12,7 +10,15 @@ const Hero = () => {
           <div className="col-lg-6 d-flex flex-column justify-content=center h-100 text-lg-start text-center">
             <H2>
               Looking for
-              <img src={PeachSrc} alt="Peach" />?
+              <span className="img d-inline-block">
+                <StaticImage
+                  src="../../../static/peach.svg"
+                  alt="Peach"
+                  placeholder="none"
+                  layout="constrained"
+                />
+              </span>
+              ?
             </H2>
             <H1>
               READY-TO-DRINK

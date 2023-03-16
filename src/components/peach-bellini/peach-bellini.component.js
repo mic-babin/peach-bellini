@@ -25,7 +25,6 @@ const PeachBellini = () => {
 
     if (path) {
       document.addEventListener("scroll", (e) => {
-        console.log("scroll");
         let percent =
           ((h["scrollTop"] || b["scrollTop"]) /
             ((h["scrollHeight"] || b["scrollHeight"]) - h.clientHeight)) *

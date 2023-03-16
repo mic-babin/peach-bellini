@@ -20,13 +20,16 @@ export const H2 = styled.h2`
   line-height: 130px;
   font-family: "Lemon-Milk-Medium";
   text-transform: uppercase;
+  .img {
+    width: 160px;
+  }
 
   @media (max-width: 1399px) {
     font-size: 120px;
     line-height: 104px;
 
-    img {
-      height: 160px;
+    .img {
+      width: 160px;
     }
   }
 
@@ -34,16 +37,16 @@ export const H2 = styled.h2`
     font-size: 90px;
     line-height: 78px;
 
-    img {
-      height: 130px;
+    .img {
+      width: 130px;
     }
   }
 
   @media (max-width: 991px) {
     font-size: 102px;
     line-height: 94px;
-    img {
-      height: 160px;
+    .img {
+      width: 160px;
     }
   }
 
@@ -51,8 +54,8 @@ export const H2 = styled.h2`
     margin-top: 200px;
     font-size: 18vw;
     line-height: 22vw;
-    img {
-      height: 28vw;
+    .img {
+      width: 28vw;
     }
   }
 `;

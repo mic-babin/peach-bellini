@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import LogoSrc from "../../../../static/logo.svg";
 import { Burger, Logo, Wrapper } from "./header.style";
 import { Link } from "gatsby";
 import Menu from "../menu/menu.component";
 import Modal from "react-modal";
+import { StaticImage } from "gatsby-plugin-image";
 
 const customStyles = {
   content: {
@@ -39,12 +39,23 @@ const Header = ({ color }) => {
       className="container-fluid"
     >
       <Link to="../">
-        <Logo src={LogoSrc} alt="" />
+        <Logo>
+          <StaticImage
+            src="../../../../static/logo.svg"
+            alt="logo"
+            placeholder="none"
+            layout="constrained"
+          />
+        </Logo>
       </Link>
 
       <Burger alt="" onClick={toggleModal} className={modalIsOpen && "is-open"}>
-        <div class="menu-icon">
-          <input class="menu-icon__cheeckbox" type="checkbox" />
+        <div className="menu-icon">
+          <input
+            className="menu-icon__cheeckbox"
+            name="toogleMenu"
+            type="checkbox"
+          />
           <div>
             <span></span>
             <span></span>
