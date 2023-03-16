@@ -3,8 +3,10 @@ import { Overlay, MenuLinks, MenuLink } from "./menu.styles";
 
 const Menu = ({ setIsOpen }) => {
   const close = () => {
+    document.querySelector(".menu-icon__cheeckbox").click();
     setIsOpen(false);
   };
+
   return (
     <Overlay>
       <MenuLinks>

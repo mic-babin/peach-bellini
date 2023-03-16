@@ -1,7 +1,7 @@
 import React from "react";
 import BubbleSrc from "../../../static/bubble.svg";
 import PeachSrc from "../../../static/peach.svg";
-import { motion, spring } from "framer-motion";
+import { motion } from "framer-motion";
 import { StaticImage } from "gatsby-plugin-image";
 import { Wrapper, CanWrapper, Container } from "./hard-seltzer.style";
 import {

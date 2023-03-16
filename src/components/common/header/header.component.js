@@ -4,6 +4,7 @@ import { Link } from "gatsby";
 import Menu from "../menu/menu.component";
 import Modal from "react-modal";
 import { StaticImage } from "gatsby-plugin-image";
+import { motion } from "framer-motion";
 
 const customStyles = {
   content: {
@@ -61,6 +62,7 @@ const Header = ({ color }) => {
       <Burger
         alt=""
         onClick={toggleModal}
+        id="burger"
         className={modalIsOpen && "is-open"}
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: 30, opacity: 0 }}
@@ -72,7 +74,7 @@ const Header = ({ color }) => {
         viewport={{ once: true }}
       >
         <div className="menu-icon">
-          <label for="toggleMenu">Menu</label>
+          <label htmlFor="toggleMenu">Menu</label>
           <input
             className="menu-icon__cheeckbox"
             name="toggleMenu"
@@ -89,9 +91,19 @@ const Header = ({ color }) => {
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         style={customStyles}
-        contentLabel="Example Modal"
+        ariaHideApp={false}
       >
-        <Menu modalIsOpen={modalIsOpen} setIsOpen={setIsOpen}></Menu>
+        <motion.div
+          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
+          transition={{
+            duration: 1,
+            delay: 0.1,
+            type: "spring",
+          }}
+        >
+          <Menu modalIsOpen={modalIsOpen} setIsOpen={setIsOpen}></Menu>
+        </motion.div>
       </Modal>
     </Wrapper>
   );

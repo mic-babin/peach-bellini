@@ -17,8 +17,8 @@ export const Logo = styled(motion.div)`
 `;
 
 export const Burger = styled(motion.div)`
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   right: 20px;
   top: 20px;
   position: fixed;
@@ -36,7 +36,9 @@ export const Burger = styled(motion.div)`
     height: 50px;
     cursor: pointer;
     transform: scale(2);
+
     .menu-icon__cheeckbox {
+      margin-top: -20px;
       display: block;
       width: 100%;
       height: 100%;

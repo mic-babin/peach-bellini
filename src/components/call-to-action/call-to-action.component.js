@@ -2,7 +2,6 @@ import React from "react";
 import { Wrapper, NeonText, NeonTextWrapper } from "./call-to-action.style";
 import PeachSrc from "../../../static/peach-bg.png";
 import { motion, spring } from "framer-motion";
-import { opacity, opacityTimes } from "../hero/hero.animation";
 
 const CallToAction = () => {
   return (
