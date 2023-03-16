@@ -2,17 +2,16 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const Logo = styled(motion.div)`
-  max-height: 147px;
+  max-width: 300px;
   margin-left: 80px;
   margin-top: 50px;
   margin-bottom: 50px;
   @media (max-width: 1499px) {
-    max-height: 120px;
   }
 
   @media (max-width: 567px) {
     margin-left: 0;
-    max-height: 90px;
+    max-width: 50vw;
   }
 `;
 

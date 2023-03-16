@@ -1,13 +1,31 @@
 import { Link } from "gatsby";
 import React from "react";
-import LogoSrc from "../../../../static/logo.svg";
 import ModerationSrc from "../../../../static/moderation.svg";
 import { Moderation, Wrapper, Logo, Contact } from "./footer.style";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Footer = () => {
   return (
     <Wrapper id="contact">
-      <Logo src={LogoSrc} alt="" />
+      <Link to="../">
+        <Logo
+          whileInView={{ y: 0, opacity: 1 }}
+          initial={{ y: 30, opacity: 0 }}
+          transition={{
+            duration: 0.4,
+            delay: 0.1,
+            type: "spring",
+          }}
+          viewport={{ once: true }}
+        >
+          <StaticImage
+            src="../../../../static/logo.svg"
+            alt="logo"
+            placeholder="none"
+            layout="constrained"
+          />
+        </Logo>
+      </Link>
       <Contact>
         <span>CONTACT US</span>
         <span>

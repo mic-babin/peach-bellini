@@ -18,15 +18,11 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const Logo = styled.img`
-  max-height: 140px;
-
-  @media (max-width: 1499px) {
-    max-height: 120px;
-  }
+export const Logo = styled.div`
+  max-width: 300px;
 
   @media (max-width: 567px) {
-    max-height: 90px;
+    max-width: 50vw;
   }
 `;
 
