@@ -1,6 +1,7 @@
 import * as React from "react";
 
-export const onRenderBody = ({ setHeadComponents }) => {
+export const onRenderBody = ({ setHtmlAttributes, setHeadComponents }) => {
+  setHtmlAttributes({ lang: "en" });
   setHeadComponents([
     <link
       rel="preload"

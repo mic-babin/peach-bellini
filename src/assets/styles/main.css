@@ -2,21 +2,25 @@
   font-family: "Lemon-Milk-Medium";
   src: local("Lemon-Milk-Medium"),
     url(../../../static/fonts/LEMONMILK-Medium.otf) format("truetype");
+  font-display: auto;
 }
 @font-face {
   font-family: "DIN-Medium";
   src: local("DIN-Medium"),
     url(../../../static/fonts/DIN-Medium.otf) format("truetype");
+  font-display: auto;
 }
 @font-face {
   font-family: "DIN-Regular";
   src: local("DIN-Regular"),
     url(../../../static/fonts/DIN-Regular.otf) format("truetype");
+  font-display: auto;
 }
 @font-face {
   font-family: "Acrotype";
   src: local("Acrotype"),
     url(../../../static/fonts/acrotype-fixed.ttf) format("truetype");
+  font-display: auto;
 }
 
 .h-100 {

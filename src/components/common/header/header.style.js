@@ -23,6 +23,12 @@ export const Burger = styled.div`
   position: fixed;
   z-index: 1000;
 
+  label {
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+
   .menu-icon {
     position: relative;
     width: 50px;

@@ -51,9 +51,11 @@ const Header = ({ color }) => {
 
       <Burger alt="" onClick={toggleModal} className={modalIsOpen && "is-open"}>
         <div className="menu-icon">
+          <label for="toggleMenu">Menu</label>
           <input
             className="menu-icon__cheeckbox"
-            name="toogleMenu"
+            name="toggleMenu"
+            id="toggleMenu"
             type="checkbox"
           />
           <div>
