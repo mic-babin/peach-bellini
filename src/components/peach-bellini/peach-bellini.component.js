@@ -1,6 +1,5 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
-import PeachSrc from "../../../static/peach.svg";
 import PinkSrc from "../../../static/pink wave.svg";
 import { useEffect, useRef } from "react";
 import {
@@ -105,7 +104,14 @@ const PeachBellini = () => {
                 </ListItem>
                 <ListItem>
                   <span>
-                    <img src={PeachSrc} alt="" />
+                    <span className="img">
+                      <StaticImage
+                        src="../../../static/peach.svg"
+                        alt="Peach"
+                        placeholder="none"
+                        layout="constrained"
+                      />
+                    </span>
                   </span>
                   MADE WITH Natural Flavour
                 </ListItem>

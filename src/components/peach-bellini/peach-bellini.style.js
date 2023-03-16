@@ -97,15 +97,15 @@ export const ListItem = styled.li`
     border-bottom: 1px solid #707070;
   }
 
-  img {
-    height: 35px;
-  }
-
   span {
     display: inline-block;
     text-align: center;
     margin-right: 1.5rem;
     width: 40px;
+  }
+
+  span.img {
+    width: 35px;
   }
 
   @media (max-width: 1399px) {
@@ -116,8 +116,8 @@ export const ListItem = styled.li`
   @media (max-width: 1199px) {
     font-size: 24px;
     line-height: 32px;
-    img {
-      height: 26px;
+    span.img {
+      width: 28px;
     }
   }
 
@@ -125,8 +125,9 @@ export const ListItem = styled.li`
     font-size: 25px;
     line-height: 27px;
 
-    img {
-      height: 27px;
+    span.img {
+      margin-left: 2px;
+      width: 25px;
     }
   }
 
@@ -134,8 +135,9 @@ export const ListItem = styled.li`
     font-size: 22px;
     line-height: 23px;
 
-    img {
-      height: 22px;
+    span.img {
+      margin-left: 5px;
+      width: 22px;
     }
   }
 
@@ -143,8 +145,8 @@ export const ListItem = styled.li`
     font-size: 20px;
     line-height: 20px;
 
-    img {
-      height: 20px;
+    span.img {
+      width: 20px;
     }
   }
 `;
