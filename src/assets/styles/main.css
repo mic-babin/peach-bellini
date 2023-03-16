@@ -5,17 +5,15 @@
 }
 @font-face {
   font-family: "DIN-Medium";
-  src: local("DIN-Medium"),
-    url(../fonts/DIN\ Next\ LT\ Pro\ Medium.otf) format("truetype");
+  src: local("DIN-Medium"), url(../fonts/DIN-Medium.otf) format("truetype");
 }
 @font-face {
   font-family: "DIN-Regular";
-  src: local("DIN-Regular"),
-    url(../fonts/DIN\ Next\ LT\ Pro\ Regular.otf) format("truetype");
+  src: local("DIN-Regular"), url(../fonts/DIN-Regular.otf) format("truetype");
 }
 @font-face {
   font-family: "Acrotype";
-  src: local("Acrotype"), url(../fonts/acrotype\ fixed.ttf) format("truetype");
+  src: local("Acrotype"), url(../fonts/acrotype-fixed.ttf) format("truetype");
 }
 
 .h-100 {
