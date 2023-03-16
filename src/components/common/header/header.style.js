@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const Logo = styled.div`
+export const Logo = styled(motion.div)`
   max-height: 147px;
   margin-left: 80px;
   margin-top: 50px;
@@ -15,7 +16,7 @@ export const Logo = styled.div`
   }
 `;
 
-export const Burger = styled.div`
+export const Burger = styled(motion.div)`
   height: 60px;
   width: 60px;
   right: 20px;

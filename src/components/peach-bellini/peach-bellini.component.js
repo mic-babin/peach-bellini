@@ -73,7 +73,16 @@ const PeachBellini = () => {
         <Container className="container">
           <div className="row">
             <div className="col-lg-6 d-flex justify-content-center justify-content-lg-end">
-              <Image>
+              <Image
+                whileInView={{ opacity: 1 }}
+                initial={{ opacity: 0 }}
+                transition={{
+                  duration: 0.4,
+                  delay: 0.2,
+                  type: "spring",
+                }}
+                viewport={{ once: true }}
+              >
                 <StaticImage
                   src="../../../static/Peach Bellini.png"
                   alt="Peach Bellini Can with Peaches"
@@ -83,13 +92,42 @@ const PeachBellini = () => {
               </Image>
             </div>
             <div className="col-lg-6">
-              <H2>PEACH BELLINI</H2>
-              <Description>
+              <H2
+                whileInView={{ x: 0, opacity: 1 }}
+                initial={{ x: 200, opacity: 0 }}
+                transition={{
+                  duration: 0.4,
+                  delay: 0.2,
+                  type: "spring",
+                }}
+                viewport={{ once: true }}
+              >
+                PEACH BELLINI
+              </H2>
+              <Description
+                whileInView={{ x: 0, opacity: 1 }}
+                initial={{ x: 200, opacity: 0 }}
+                transition={{
+                  duration: 0.4,
+                  delay: 0.3,
+                  type: "spring",
+                }}
+                viewport={{ once: true }}
+              >
                 You bet your peaches it’s tasty! Inspired by the classic Bellini
                 cocktail, Clubtails Peach Bellini is bursting with juicy peach
                 flavour!
               </Description>
-              <List>
+              <List
+                whileInView={{ x: 0, opacity: 1 }}
+                initial={{ x: 200, opacity: 0 }}
+                transition={{
+                  duration: 0.4,
+                  delay: 0.4,
+                  type: "spring",
+                }}
+                viewport={{ once: true }}
+              >
                 <ListItem>
                   <span>⚡</span>7% alcohol
                 </ListItem>

@@ -39,7 +39,16 @@ const Header = ({ color }) => {
       className="container-fluid"
     >
       <Link to="../">
-        <Logo>
+        <Logo
+          whileInView={{ y: 0, opacity: 1 }}
+          initial={{ y: 30, opacity: 0 }}
+          transition={{
+            duration: 0.4,
+            delay: 0.1,
+            type: "spring",
+          }}
+          viewport={{ once: true }}
+        >
           <StaticImage
             src="../../../../static/logo.svg"
             alt="logo"
@@ -49,7 +58,19 @@ const Header = ({ color }) => {
         </Logo>
       </Link>
 
-      <Burger alt="" onClick={toggleModal} className={modalIsOpen && "is-open"}>
+      <Burger
+        alt=""
+        onClick={toggleModal}
+        className={modalIsOpen && "is-open"}
+        whileInView={{ y: 0, opacity: 1 }}
+        initial={{ y: 30, opacity: 0 }}
+        transition={{
+          duration: 0.4,
+          delay: 0.1,
+          type: "spring",
+        }}
+        viewport={{ once: true }}
+      >
         <div className="menu-icon">
           <label for="toggleMenu">Menu</label>
           <input

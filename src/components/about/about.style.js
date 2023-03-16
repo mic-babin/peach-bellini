@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const Bg = styled.div`
   padding: 125px 0;
@@ -6,7 +7,7 @@ export const Bg = styled.div`
   background-color: #efc08e;
 `;
 
-export const H2 = styled.h2`
+export const H2 = styled(motion.h2)`
   color: #000000;
   font-size: 75px;
   line-height: 90px;
@@ -44,7 +45,7 @@ export const H2 = styled.h2`
   }
 `;
 
-export const Paragraph = styled.p`
+export const Paragraph = styled(motion.p)`
   font-family: "DIN-Regular";
   font-size: 32px;
   line-height: 40px;

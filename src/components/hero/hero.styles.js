@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "gatsby";
+import { motion } from "framer-motion";
 
 export const Bg = styled.div`
   min-height: 100vh;
@@ -12,7 +13,7 @@ export const Bg = styled.div`
   }
 `;
 
-export const H2 = styled.h2`
+export const H2 = styled(motion.h2)`
   margin-top: 250px;
   color: #000000;
   font-size: 150px;
@@ -59,7 +60,7 @@ export const H2 = styled.h2`
   }
 `;
 
-export const H1 = styled.h1`
+export const H1 = styled(motion.h1)`
   margin-top: 30px;
   color: #d04638;
   font-size: 60px;
@@ -83,12 +84,15 @@ export const H1 = styled.h1`
   }
 `;
 
-export const Button = styled(Link)`
-  cursor: pointer;
+export const ButtonWrapper = styled(motion.div)`
   margin-top: 50px;
+`;
+
+export const Button = styled(Link)`
+  white-space: nowrap;
+  cursor: pointer;
   color: #d04638;
   background-color: transparent;
-  max-width: 325px;
   font-size: 30px;
   line-height: 40px;
   font-family: "DIN-Medium";
@@ -97,21 +101,20 @@ export const Button = styled(Link)`
   border-radius: 34px;
   padding-top: 0.75rem;
   padding-bottom: 0.45rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   text-align: center;
   text-decoration: none;
+  transition: all 0.2s ease;
 
   &:hover {
-    color: #d04638;
+    color: #fff;
+    background-color: #d04638;
   }
 
   @media (max-width: 1199px) {
     font-size: 28px;
     line-height: 35px;
-  }
-
-  @media (max-width: 991px) {
-    margin-left: 50%;
-    transform: translateX(-50%);
   }
 
   @media (max-width: 567px) {
@@ -173,7 +176,7 @@ export const NeonWrapper = styled.div`
   }
 `;
 
-export const NeonWord = styled.div`
+export const NeonWord = styled(motion.div)`
   font-family: "Acrotype";
   color: rgba(245, 237, 150, 1);
   font-size: 75px;

@@ -1,6 +1,17 @@
 import React from "react";
-import { Bg, H2, H1, Button, Can, NeonWord, NeonWrapper } from "./hero.styles";
+import {
+  Bg,
+  H2,
+  H1,
+  Button,
+  Can,
+  NeonWord,
+  NeonWrapper,
+  ButtonWrapper,
+} from "./hero.styles";
+import { opacity, opacityTimes } from "./hero.animation";
 import { StaticImage } from "gatsby-plugin-image";
+import { spring, motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -8,7 +19,16 @@ const Hero = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-6 d-flex flex-column justify-content=center h-100 text-lg-start text-center">
-            <H2>
+            <H2
+              whileInView={{ x: 0, opacity: 1 }}
+              initial={{ x: -200, opacity: 0 }}
+              transition={{
+                duration: 0.4,
+                delay: 0.2,
+                type: "spring",
+              }}
+              viewport={{ once: true }}
+            >
               Looking for
               <span className="img d-inline-block">
                 <StaticImage
@@ -20,13 +40,43 @@ const Hero = () => {
               </span>
               ?
             </H2>
-            <H1>
+            <H1
+              whileInView={{ x: 0, opacity: 1 }}
+              initial={{ x: -200, opacity: 0 }}
+              transition={{
+                duration: 0.4,
+                delay: 0.3,
+                type: "spring",
+              }}
+              viewport={{ once: true }}
+            >
               READY-TO-DRINK
               <br /> PEACH BELLINI
             </H1>
-            <Button to="../#about">Learn more</Button>
+            <ButtonWrapper
+              whileInView={{ y: 0, opacity: 1 }}
+              initial={{ y: 100, opacity: 0 }}
+              transition={{
+                duration: 0.4,
+                delay: 0.4,
+                type: "spring",
+              }}
+              viewport={{ once: true }}
+            >
+              <Button to="../#about">Learn more</Button>
+            </ButtonWrapper>
           </div>
-          <div className="col-lg-6 position-relative">
+          <motion.div
+            className="col-lg-6 position-relative"
+            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{
+              duration: 0.4,
+              delay: 0.3,
+              type: "spring",
+            }}
+            viewport={{ once: true }}
+          >
             <Can>
               <StaticImage
                 src="../../../static/hero.png"
@@ -35,12 +85,64 @@ const Hero = () => {
               />
             </Can>
             <NeonWrapper>
-              <NeonWord>easy</NeonWord>
-              <NeonWord>peezy</NeonWord>
-              <NeonWord>peachy</NeonWord>
-              <NeonWord>squeezy</NeonWord>
+              <NeonWord
+                initial={{ opacity: 0.4 }}
+                animate={opacity}
+                transition={{
+                  times: opacityTimes,
+                  type: spring,
+                  duration: 1.25,
+                  delay: 0.25,
+                  repeat: Infinity,
+                  repeatDelay: 4.25,
+                }}
+              >
+                easy
+              </NeonWord>
+              <NeonWord
+                initial={{ opacity: 0.4 }}
+                animate={opacity}
+                transition={{
+                  times: opacityTimes,
+                  type: spring,
+                  duration: 1.25,
+                  delay: 1.5,
+                  repeat: Infinity,
+                  repeatDelay: 4.25,
+                }}
+              >
+                peezy
+              </NeonWord>
+              <NeonWord
+                initial={{ opacity: 0.4 }}
+                animate={opacity}
+                transition={{
+                  times: opacityTimes,
+                  type: spring,
+                  duration: 1.25,
+                  delay: 2.75,
+                  repeat: Infinity,
+                  repeatDelay: 4.25,
+                }}
+              >
+                peachy
+              </NeonWord>
+              <NeonWord
+                initial={{ opacity: 0.4 }}
+                animate={opacity}
+                transition={{
+                  times: opacityTimes,
+                  type: spring,
+                  duration: 1.25,
+                  delay: 4,
+                  repeat: Infinity,
+                  repeatDelay: 4.25,
+                }}
+              >
+                squeezy
+              </NeonWord>
             </NeonWrapper>
-          </div>
+          </motion.div>
         </div>
       </div>
     </Bg>

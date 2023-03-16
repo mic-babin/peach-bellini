@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const Wrapper = styled.div`
   background: linear-gradient(to bottom, #f0cb6e, #f2d16f, #fff3b2);
@@ -18,7 +19,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Image = styled.div`
+export const Image = styled(motion.div)`
   height: 750px;
 
   img {
@@ -34,7 +35,7 @@ export const Image = styled.div`
     height: auto;
   }
 `;
-export const H2 = styled.h2`
+export const H2 = styled(motion.h2)`
   padding-top: 25px;
   color: #000000;
   font-size: 75px;
@@ -61,7 +62,7 @@ export const H2 = styled.h2`
     line-height: 57px;
   }
 `;
-export const Description = styled.p`
+export const Description = styled(motion.p)`
   font-family: "DIN-Regular";
   font-size: 32px;
   line-height: 40px;
@@ -82,7 +83,7 @@ export const Description = styled.p`
     line-height: 27px;
   }
 `;
-export const List = styled.ul`
+export const List = styled(motion.ul)`
   padding-left: 0;
   list-style: none;
 `;

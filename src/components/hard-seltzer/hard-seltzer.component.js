@@ -1,6 +1,7 @@
 import React from "react";
 import BubbleSrc from "../../../static/bubble.svg";
 import PeachSrc from "../../../static/peach.svg";
+import { motion, spring } from "framer-motion";
 import { StaticImage } from "gatsby-plugin-image";
 import { Wrapper, CanWrapper, Container } from "./hard-seltzer.style";
 import {
@@ -17,13 +18,42 @@ const HardSeltzer = () => {
         <Container className="container">
           <div className="row">
             <div className="col-lg-6 pe-lg-5">
-              <H2>HARD SELTZER</H2>
-              <Description>
+              <H2
+                whileInView={{ x: 0, opacity: 1 }}
+                initial={{ x: -200, opacity: 0 }}
+                transition={{
+                  duration: 0.4,
+                  delay: 0.2,
+                  type: "spring",
+                }}
+                viewport={{ once: true }}
+              >
+                HARD SELTZER
+              </H2>
+              <Description
+                whileInView={{ x: 0, opacity: 1 }}
+                initial={{ x: -200, opacity: 0 }}
+                transition={{
+                  duration: 0.4,
+                  delay: 0.3,
+                  type: "spring",
+                }}
+                viewport={{ once: true }}
+              >
                 No weak sauce seltzers here—Clubtails Hard Seltzers are packed
                 with cocktail flavour and punch! Each can serves 7% alcohol and
                 only 2 grams of sugar!
               </Description>
-              <List>
+              <List
+                whileInView={{ x: 0, opacity: 1 }}
+                initial={{ x: -200, opacity: 0 }}
+                transition={{
+                  duration: 0.4,
+                  delay: 0.4,
+                  type: "spring",
+                }}
+                viewport={{ once: true }}
+              >
                 <ListItem>
                   <span>⚡</span>7% alcohol
                 </ListItem>
@@ -39,7 +69,17 @@ const HardSeltzer = () => {
                 </ListItem>
               </List>
             </div>
-            <div className="col-lg-6 d-flex justify-content-center align-items-center  py-sm-5 py-lg-0">
+            <motion.div
+              className="col-lg-6 d-flex justify-content-center align-items-center  py-sm-5 py-lg-0"
+              whileInView={{ opacity: 1 }}
+              initial={{ opacity: 0 }}
+              transition={{
+                duration: 0.4,
+                delay: 0.2,
+                type: "spring",
+              }}
+              viewport={{ once: true }}
+            >
               <CanWrapper>
                 <div className="can">
                   <StaticImage
@@ -49,8 +89,10 @@ const HardSeltzer = () => {
                     layout="constrained"
                   />
                 </div>
-                <img className="bubble" src={BubbleSrc} alt="" />
-                <span>🍓</span>
+                <div className="floating">
+                  <img className="bubble" src={BubbleSrc} alt="" />
+                  <span>🍓</span>
+                </div>
               </CanWrapper>
               <CanWrapper>
                 <div className="can">
@@ -61,8 +103,10 @@ const HardSeltzer = () => {
                     layout="constrained"
                   />
                 </div>
-                <img className="bubble" src={BubbleSrc} alt="" />
-                <span>🍒</span>
+                <div className="floating floating-2">
+                  <img className="bubble" src={BubbleSrc} alt="" />
+                  <span>🍒</span>
+                </div>
               </CanWrapper>
               <CanWrapper>
                 <div className="can">
@@ -73,12 +117,14 @@ const HardSeltzer = () => {
                     layout="constrained"
                   />
                 </div>
-                <img className="bubble" src={BubbleSrc} alt="" />
-                <span>
-                  <img src={PeachSrc} alt="" />
-                </span>
+                <div className="floating floating-3">
+                  <img className="bubble" src={BubbleSrc} alt="" />
+                  <span>
+                    <img src={PeachSrc} alt="" />
+                  </span>
+                </div>
               </CanWrapper>
-            </div>
+            </motion.div>
           </div>
         </Container>
       </Wrapper>

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { motion } from "framer-motion";
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -16,8 +16,8 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const NeonTextWrapper = styled.div`
-  transform: translate(5vw, 1.3vh);
+export const NeonTextWrapper = styled(motion.div)`
+  transform: translate(7vw, -1vh);
 `;
 
 export const NeonText = styled.div`
