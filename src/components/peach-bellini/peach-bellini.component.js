@@ -1,12 +1,11 @@
 import React from "react";
-import PeachCanSrc from "../../../static/Peach Bellini.png";
+import { StaticImage } from "gatsby-plugin-image";
 import PeachSrc from "../../../static/peach.svg";
 import PinkSrc from "../../../static/pink wave.svg";
 import { useEffect, useRef } from "react";
 import {
   Wrapper,
   CurbTextWrapper,
-  CurbText,
   Image,
   H2,
   Description,
@@ -44,8 +43,8 @@ const PeachBellini = () => {
       <Wrapper id="peach-bellini">
         <PinkWave src={PinkSrc} alt="" />
         <CurbTextWrapper>
-          <CurbText>
-            <svg width="100vw" height="450px" viewBox="0 0 1200.72 89.55">
+          <div>
+            <svg width="100vw" height="510px" viewBox="0 0 1200.72 89.55">
               <path
                 ref={curve}
                 id="curve"
@@ -71,12 +70,19 @@ const PeachBellini = () => {
                 </textPath>
               </text>
             </svg>
-          </CurbText>
+          </div>
         </CurbTextWrapper>
         <Container className="container">
           <div className="row">
-            <div className="col-lg-6 d-flex justify-content-end">
-              <Image src={PeachCanSrc} alt="" />
+            <div className="col-lg-6 d-flex justify-content-center justify-content-lg-end">
+              <Image>
+                <StaticImage
+                  src="../../../static/Peach Bellini.png"
+                  alt="Peach Bellini Can with Peaches"
+                  placeholder="none"
+                  layout="constrained"
+                />
+              </Image>
             </div>
             <div className="col-lg-6">
               <H2>PEACH BELLINI</H2>

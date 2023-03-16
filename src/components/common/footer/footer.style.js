@@ -12,6 +12,10 @@ export const Wrapper = styled.div`
 
   max-width: 100vw;
   overflow: hidden;
+
+  @media (max-width: 767px) {
+    padding-bottom: 175px;
+  }
 `;
 
 export const Logo = styled.img`
@@ -19,6 +23,10 @@ export const Logo = styled.img`
 
   @media (max-width: 1499px) {
     max-height: 120px;
+  }
+
+  @media (max-width: 567px) {
+    max-height: 90px;
   }
 `;
 
@@ -30,6 +38,10 @@ export const Moderation = styled.img`
 
   @media (max-width: 1499px) {
     max-height: 70px;
+  }
+  @media (max-width: 767px) {
+    right: 50%;
+    transform: translateX(50%);
   }
 `;
 
@@ -70,6 +82,27 @@ export const Contact = styled.div`
 
     span {
       padding: 0 1rem;
+    }
+  }
+
+  @media (max-width: 1299px) {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @media (max-width: 1299px) {
+    font-size: 28px;
+    line-height: 28px;
+    flex-direction: column;
+    span {
+      padding: 1rem 1rem;
+      border-left: none;
+      text-align: center;
+      border-top: 2px solid #000;
+
+      &:first-of-type {
+        border-top: none;
+      }
     }
   }
 `;

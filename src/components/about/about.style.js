@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const BG = styled.div`
+export const Bg = styled.div`
   padding: 125px 0;
   max-width: 100vw;
   background-color: #efc08e;
@@ -13,7 +13,6 @@ export const H2 = styled.h2`
   font-family: "Lemon-Milk-Medium";
   text-transform: uppercase;
   text-align: right;
-  padding-right: 40px;
 
   & span {
     display: block;
@@ -24,6 +23,24 @@ export const H2 = styled.h2`
   @media (max-width: 1399px) {
     font-size: 60px;
     line-height: 72px;
+  }
+
+  @media (max-width: 1199px) {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  @media (max-width: 991px) {
+    text-align: left;
+    padding-bottom: 2rem;
+    padding-left: 0.5rem;
+    font-size: 60px;
+    line-height: 72px;
+  }
+
+  @media (max-width: 567px) {
+    font-size: 50px;
+    line-height: 60px;
   }
 `;
 
@@ -42,5 +59,18 @@ export const Paragraph = styled.p`
   @media (max-width: 1399px) {
     font-size: 30px;
     line-height: 37px;
+  }
+  @media (max-width: 1199px) {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  @media (max-width: 991px) {
+    padding-left: 0;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 25px;
+    line-height: 27px;
+    padding-left: 0;
   }
 `;

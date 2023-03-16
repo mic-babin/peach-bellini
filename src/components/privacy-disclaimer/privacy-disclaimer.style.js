@@ -19,6 +19,17 @@ export const Wrapper = styled.div`
     font-size: 28px;
     line-height: 35px;
   }
+
+  @media (max-width: 1199px) {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 25px;
+    line-height: 27px;
+    padding-left: 0;
+  }
 `;
 
 export const H1 = styled.h1`
@@ -42,5 +53,13 @@ export const H3 = styled.div`
   padding-bottom: 5px;
   @media (max-width: 1399px) {
     font-size: 28px;
+  }
+
+  @media (max-width: 1199px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 25px;
   }
 `;

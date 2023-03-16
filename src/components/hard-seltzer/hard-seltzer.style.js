@@ -3,18 +3,22 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   background: #efc08e;
   max-width: 100vw;
-  /* overflow-x: hidden; */
 `;
 
 export const Container = styled.div`
   padding-top: 25px;
   padding-bottom: 100px;
+
+  @media (max-width: 991px) {
+    padding-bottom: 50px;
+  }
 `;
 
-export const LeftCol = styled.div``;
-
-export const Can = styled.div`
+export const CanWrapper = styled.div`
   position: relative;
+  .can img {
+    height: 100%;
+  }
 
   .bubble {
     position: absolute;
@@ -33,14 +37,14 @@ export const Can = styled.div`
     }
   }
 
-  @media (max-width: 1399px) {
+  @media (max-width: 1699px) {
     padding-top: 50px;
     .can {
-      height: 500px;
+      width: 189px;
     }
     .bubble {
       position: absolute;
-      top: -105px;
+      top: -108px;
       width: 90%;
       left: 70%;
     }
@@ -55,58 +59,51 @@ export const Can = styled.div`
       }
     }
   }
-`;
-export const H2 = styled.h2`
-  padding-top: 25px;
-  color: #000000;
-  font-size: 75px;
-  line-height: 90px;
-  font-family: "Lemon-Milk-Medium";
-  text-transform: uppercase;
 
-  @media (max-width: 1399px) {
-    font-size: 60px;
-    line-height: 72px;
+  @media (max-width: 1299px) {
+    padding-top: 100px;
+    .can {
+      width: 169px;
+    }
+    .bubble {
+      top: -40px;
+    }
+    span {
+      top: 0px;
+    }
   }
-`;
-export const Description = styled.p`
-  font-family: "DIN-Regular";
-  font-size: 32px;
-  line-height: 40px;
-  padding: 1.5rem 0;
-  @media (max-width: 1399px) {
-    font-size: 28px;
-    line-height: 35px;
-  }
-`;
-export const List = styled.ul`
-  padding-left: 0;
-  list-style: none;
-`;
-export const ListItem = styled.li`
-  width: 100%;
-  border-top: 1px solid #707070;
-  padding: 0.5rem 1rem;
-  font-family: "DIN-Regular";
-  font-size: 32px;
+  @media (max-width: 767px) {
+    padding-top: 100px;
+    .can {
+      width: 149px;
+    }
+    .bubble {
+      top: -25px;
+    }
+    span {
+      top: 5px;
+      font-size: 30px;
 
-  &:last-of-type {
-    border-bottom: 1px solid #707070;
+      img {
+        height: 30px;
+      }
+    }
   }
+  @media (max-width: 567px) {
+    padding-top: 100px;
+    .can {
+      width: 25vw;
+    }
+    .bubble {
+      top: calc(95px - 20vw);
+    }
+    span {
+      top: calc(120px - 20vw);
+      font-size: 5vw;
 
-  img {
-    height: 35px;
-  }
-
-  span {
-    display: inline-block;
-    text-align: center;
-    margin-right: 1.5rem;
-    width: 40px;
-  }
-
-  @media (max-width: 1399px) {
-    font-size: 28px;
-    line-height: 35px;
+      img {
+        height: 5vw;
+      }
+    }
   }
 `;

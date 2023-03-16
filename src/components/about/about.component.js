@@ -1,12 +1,12 @@
 import React from "react";
-import { BG, H2, Paragraph } from "./about.style";
+import { Bg, H2, Paragraph } from "./about.style";
 
 const About = () => {
   return (
-    <BG id="about">
+    <Bg id="about">
       <div className="container">
         <div className="row">
-          <H2 className="col-lg-4 mx-0">
+          <H2 className="col-lg-4 px-lg-0">
             <span>👀</span>
             ABOUT US
           </H2>
@@ -26,7 +26,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </BG>
+    </Bg>
   );
 };
 

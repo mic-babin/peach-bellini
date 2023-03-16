@@ -1,19 +1,14 @@
 import React from "react";
-import BerryCanSrc from "../../../static/Seltzer_Berry.png";
-import PeachCanSrc from "../../../static/Seltzer_Peach.png";
-import CherryCanSrc from "../../../static/Seltzer_Cherry.png";
 import BubbleSrc from "../../../static/bubble.svg";
 import PeachSrc from "../../../static/peach.svg";
+import { StaticImage } from "gatsby-plugin-image";
+import { Wrapper, CanWrapper, Container } from "./hard-seltzer.style";
 import {
-  Wrapper,
-  Can,
   H2,
   Description,
   List,
   ListItem,
-  Container,
-  LeftCol,
-} from "./hard-seltzer.style";
+} from "../peach-bellini/peach-bellini.style";
 
 const HardSeltzer = () => {
   return (
@@ -21,7 +16,7 @@ const HardSeltzer = () => {
       <Wrapper id="hard-seltzer">
         <Container className="container">
           <div className="row">
-            <LeftCol className="col-lg-6 pe-5">
+            <div className="col-lg-6 pe-lg-5">
               <H2>HARD SELTZER</H2>
               <Description>
                 No weak sauce seltzers here—Clubtails Hard Seltzers are packed
@@ -39,28 +34,50 @@ const HardSeltzer = () => {
                   <span>💦</span>3 g of carbs
                 </ListItem>
                 <ListItem>
-                  <span>🚀</span>Available at TheBeerStore (TBS)
+                  <span>🚀</span>Available at TheBeerStore{" "}
+                  <span className="d-inline d-lg-none d-xlg-inline">(TBS)</span>
                 </ListItem>
               </List>
-            </LeftCol>
-            <div className="col-lg-6 d-flex">
-              <Can>
-                <img className="can" src={BerryCanSrc} alt="" />
+            </div>
+            <div className="col-lg-6 d-flex justify-content-center align-items-center  py-sm-5 py-lg-0">
+              <CanWrapper>
+                <div className="can">
+                  <StaticImage
+                    src="../../../static/Seltzer_Berry.png"
+                    alt="Strawberry Daiquiri Hard Seltzer"
+                    placeholder="none"
+                    layout="constrained"
+                  />
+                </div>
                 <img className="bubble" src={BubbleSrc} alt="" />
                 <span>🍓</span>
-              </Can>
-              <Can>
-                <img className="can" src={CherryCanSrc} alt="" />
+              </CanWrapper>
+              <CanWrapper>
+                <div className="can">
+                  <StaticImage
+                    src="../../../static/Seltzer_Cherry.png"
+                    alt="Black Cherry Margarita Hard Seltzer"
+                    placeholder="none"
+                    layout="constrained"
+                  />
+                </div>
                 <img className="bubble" src={BubbleSrc} alt="" />
                 <span>🍒</span>
-              </Can>
-              <Can>
-                <img className="can" src={PeachCanSrc} alt="" />
+              </CanWrapper>
+              <CanWrapper>
+                <div className="can">
+                  <StaticImage
+                    src="../../../static/Seltzer_Peach.png"
+                    alt="White Peach Cosmo Hard Seltzer"
+                    placeholder="none"
+                    layout="constrained"
+                  />
+                </div>
                 <img className="bubble" src={BubbleSrc} alt="" />
                 <span>
                   <img src={PeachSrc} alt="" />
                 </span>
-              </Can>
+              </CanWrapper>
             </div>
           </div>
         </Container>

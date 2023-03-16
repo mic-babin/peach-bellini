@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import LogoSrc from "../../../../static/logo.svg";
-import BurgerSrc from "../../../../static/hamburger.svg";
 import { Burger, Logo, Wrapper } from "./header.style";
 import { Link } from "gatsby";
 import Menu from "../menu/menu.component";
@@ -25,7 +24,6 @@ const customStyles = {
 };
 
 const Header = ({ color }) => {
-  const showMenu = true;
   const [modalIsOpen, setIsOpen] = useState(false);
 
   function closeModal() {

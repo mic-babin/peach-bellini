@@ -8,6 +8,11 @@ export const Logo = styled.img`
   @media (max-width: 1499px) {
     max-height: 120px;
   }
+
+  @media (max-width: 567px) {
+    margin-left: 0;
+    max-height: 90px;
+  }
 `;
 
 export const Burger = styled.div`
@@ -104,6 +109,11 @@ export const Wrapper = styled.div`
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
   max-width: 100vw;
   padding: 0;
+
+  @media (max-width: 567px) {
+    justify-content: center;
+  }
 `;
