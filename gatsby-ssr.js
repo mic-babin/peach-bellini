@@ -4,7 +4,7 @@ export const onRenderBody = ({ setHeadComponents }) => {
   setHeadComponents([
     <link
       rel="preload"
-      href="static/LEMONMILK-Medium.otf"
+      href="/fonts/LEMONMILK-Medium.otf"
       as="font"
       type="font/otf"
       crossOrigin="anonymous"
@@ -12,7 +12,7 @@ export const onRenderBody = ({ setHeadComponents }) => {
     />,
     <link
       rel="preload"
-      href="static/acrotype-fixed.ttf"
+      href="/fonts/acrotype-fixed.ttf"
       as="font"
       type="font/ttf"
       crossOrigin="anonymous"
@@ -20,7 +20,7 @@ export const onRenderBody = ({ setHeadComponents }) => {
     />,
     <link
       rel="preload"
-      href="static/DIN-Medium.otf"
+      href="/fonts/DIN-Medium.otf"
       as="font"
       type="font/otf"
       crossOrigin="anonymous"
@@ -28,7 +28,7 @@ export const onRenderBody = ({ setHeadComponents }) => {
     />,
     <link
       rel="preload"
-      href="static/DIN-Regular.otf"
+      href="/fonts/DIN-Regular.otf"
       as="font"
       type="font/otf"
       crossOrigin="anonymous"
