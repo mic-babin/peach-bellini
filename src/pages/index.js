@@ -9,6 +9,7 @@ import HardSeltzer from "../components/hard-seltzer/hard-seltzer.component";
 import CallToAction from "../components/call-to-action/call-to-action.component";
 import Footer from "../components/common/footer/footer.component";
 import styled from "styled-components";
+import { SEO } from "../components/common/seo";
 
 export default function Home() {
   return (
@@ -23,6 +24,8 @@ export default function Home() {
     </Wrapper>
   );
 }
+
+export const Head = () => <SEO />;
 
 const Wrapper = styled.div`
   max-width: 100vw;

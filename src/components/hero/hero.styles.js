@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
 
 export const Bg = styled.div`
   min-height: 100vh;
