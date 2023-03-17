@@ -94,7 +94,7 @@ const Hero = () => {
                   duration: 1.25,
                   delay: 0.25,
                   repeat: Infinity,
-                  repeatDelay: 4.25,
+                  repeatDelay: 3.1,
                 }}
               >
                 easy
@@ -106,9 +106,9 @@ const Hero = () => {
                   times: opacityTimes,
                   type: spring,
                   duration: 1.25,
-                  delay: 1.5,
+                  delay: 0.3,
                   repeat: Infinity,
-                  repeatDelay: 4.25,
+                  repeatDelay: 3.1,
                 }}
               >
                 peezy
@@ -120,9 +120,9 @@ const Hero = () => {
                   times: opacityTimes,
                   type: spring,
                   duration: 1.25,
-                  delay: 2.75,
+                  delay: 1.75,
                   repeat: Infinity,
-                  repeatDelay: 4.25,
+                  repeatDelay: 3.1,
                 }}
               >
                 peachy
@@ -134,13 +134,17 @@ const Hero = () => {
                   times: opacityTimes,
                   type: spring,
                   duration: 1.25,
-                  delay: 4,
+                  delay: 1.7,
                   repeat: Infinity,
-                  repeatDelay: 4.25,
+                  repeatDelay: 3.1,
                 }}
               >
                 squeezy
               </NeonWord>
+              {/* <NeonWord>easy</NeonWord>
+              <NeonWord>peezy</NeonWord>
+              <NeonWord>peachy</NeonWord>
+              <NeonWord>squeezy</NeonWord> */}
             </NeonWrapper>
           </motion.div>
         </div>

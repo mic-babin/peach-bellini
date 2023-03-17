@@ -27,12 +27,12 @@ export const MenuLink = styled(Link)`
   line-height: 45px;
   text-transform: lowercase;
   text-decoration: none;
-  color: rgb(245, 237, 150);
+  color: rgb(249, 238, 127);
   text-shadow: 0 0 6px rgba(245, 237, 150, 0.5),
     0 0 10px rgba(245, 237, 150, 0.5), 0 0 21px rgba(245, 237, 150, 0.5);
 
   &:hover {
-    color: rgb(245, 237, 150);
+    color: rgb(249, 238, 127);
     text-shadow: 0 0 9px rgba(245, 237, 150, 0.7),
       0 0 15px rgba(245, 237, 150, 0.7), 0 0 30px rgba(245, 237, 150, 0.7);
   }

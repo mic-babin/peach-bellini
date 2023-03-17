@@ -93,8 +93,8 @@ export const Button = styled(Link)`
   cursor: pointer;
   color: #d04638;
   background-color: transparent;
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 25px;
+  line-height: 25px;
   font-family: "DIN-Medium";
   text-transform: uppercase;
   border: 2px solid #d04638;
@@ -113,13 +113,13 @@ export const Button = styled(Link)`
   }
 
   @media (max-width: 1199px) {
-    font-size: 28px;
-    line-height: 35px;
+    font-size: 23px;
+    line-height: 23px;
   }
 
   @media (max-width: 567px) {
-    font-size: 5vw;
-    line-height: 6vw;
+    font-size: 4.5vw;
+    line-height: 4.5vw;
   }
 `;
 
@@ -178,7 +178,7 @@ export const NeonWrapper = styled.div`
 
 export const NeonWord = styled(motion.div)`
   font-family: "Acrotype";
-  color: rgba(245, 237, 150, 1);
+  color: rgba(249, 238, 127, 1);
   font-size: 75px;
   line-height: 55px;
   text-shadow: 0 0 6px rgba(245, 237, 150, 0.5),

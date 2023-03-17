@@ -17,7 +17,7 @@ export const Wrapper = styled.div`
 `;
 
 export const NeonTextWrapper = styled(motion.div)`
-  transform: translate(7vw, -1vh);
+  transform: translate(3vw, -1vh);
 `;
 
 export const NeonText = styled.div`
@@ -29,7 +29,7 @@ export const NeonText = styled.div`
   transform: rotate(-10deg);
 
   &:nth-of-type(2) {
-    transform: rotate(-10deg) translateX(-80px);
+    transform: rotate(-10deg) translateX(80px);
   }
   &:nth-of-type(3) {
     transform: rotate(-10deg) translateX(-40px);
@@ -41,7 +41,7 @@ export const NeonText = styled.div`
     transform: rotate(-10deg);
 
     &:nth-of-type(2) {
-      transform: rotate(-10deg) translateX(-8vw);
+      transform: rotate(-10deg) translateX(8vw);
     }
     &:nth-of-type(3) {
       transform: rotate(-10deg) translateX(-4vw);

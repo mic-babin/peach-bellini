@@ -29,6 +29,7 @@
 
 .w-100 {
   width: 100%;
+  color: rgb(116, 111, 59);
 }
 
 .floating {
@@ -37,23 +38,23 @@
 }
 
 .floating-2 {
-  animation-delay: 3.5s;
+  animation-delay: 2s;
 }
 .floating-3 {
-  animation-delay: 1.8s;
+  animation-delay: 4s;
 }
 
 @keyframes float {
   0% {
     opacity: 1;
-    transform: translatey(-540px);
+    transform: translatey(-550px);
   }
   50% {
-    transform: translatey(-560px);
+    transform: translatey(-570px);
   }
   100% {
     opacity: 1;
-    transform: translatey(-540px);
+    transform: translatey(-550px);
   }
 }
 
