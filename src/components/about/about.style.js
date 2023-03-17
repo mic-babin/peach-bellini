@@ -21,7 +21,7 @@ export const H2 = styled(motion.h2)`
     line-height: 40px;
   }
 
-  @media (max-width: 1399px) {
+  @media (max-width: 1449px) {
     font-size: 60px;
     line-height: 72px;
   }
@@ -57,7 +57,7 @@ export const Paragraph = styled(motion.p)`
     margin-bottom: 0;
   }
 
-  @media (max-width: 1399px) {
+  @media (max-width: 1449px) {
     font-size: 30px;
     line-height: 37px;
   }

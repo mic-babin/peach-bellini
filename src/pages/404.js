@@ -1,6 +1,5 @@
 import * as React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "../assets/styles/main.css";
+import "../assets/styles/main.scss";
 import Header from "../components/common/header/header.component";
 import Footer from "../components/common/footer/footer.component";
 import styled from "styled-components";

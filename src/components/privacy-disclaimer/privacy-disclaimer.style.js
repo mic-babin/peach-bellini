@@ -15,7 +15,7 @@ export const Wrapper = styled.div`
     padding-bottom: 1rem;
   }
 
-  @media (max-width: 1399px) {
+  @media (max-width: 1449px) {
     font-size: 28px;
     line-height: 35px;
   }
@@ -41,7 +41,7 @@ export const H1 = styled.h1`
   text-transform: uppercase;
   padding-bottom: 60px;
 
-  @media (max-width: 1399px) {
+  @media (max-width: 1449px) {
     font-size: 60px;
     line-height: 72px;
   }
@@ -51,7 +51,7 @@ export const H3 = styled.div`
   font-family: "DIN-Medium";
   font-size: 35px;
   padding-bottom: 5px;
-  @media (max-width: 1399px) {
+  @media (max-width: 1449px) {
     font-size: 28px;
   }
 

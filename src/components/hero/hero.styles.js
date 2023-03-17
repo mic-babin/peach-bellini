@@ -24,7 +24,7 @@ export const H2 = styled(motion.h2)`
     width: 160px;
   }
 
-  @media (max-width: 1399px) {
+  @media (max-width: 1449px) {
     font-size: 120px;
     line-height: 104px;
 
@@ -68,7 +68,7 @@ export const H1 = styled(motion.h1)`
   font-family: "Lemon-Milk-Medium";
   text-transform: uppercase;
 
-  @media (max-width: 1399px) {
+  @media (max-width: 1449px) {
     font-size: 50px;
     line-height: 50px;
   }
@@ -165,6 +165,10 @@ export const NeonWrapper = styled.div`
   left: 50px;
   transform: rotate(-10deg);
 
+  @media (max-width: 1449px) {
+    transform: rotate(-10deg) translate(15px, -40px);
+  }
+
   @media (max-width: 991px) {
     transform: rotate(-10deg) translate(150px, -400px);
   }
@@ -192,6 +196,12 @@ export const NeonWord = styled(motion.div)`
   }
   &:nth-of-type(4) {
     transform: translateX(-40px);
+  }
+
+  @media (max-width: 1449px) {
+    font-size: 67px;
+    line-height: 50px;
+    margin-left: -25px;
   }
 
   @media (max-width: 1199px) {

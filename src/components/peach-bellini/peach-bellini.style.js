@@ -43,7 +43,7 @@ export const H2 = styled(motion.h2)`
   font-family: "Lemon-Milk-Medium";
   text-transform: uppercase;
 
-  @media (max-width: 1399px) {
+  @media (max-width: 1449px) {
     font-size: 60px;
     line-height: 72px;
   }
@@ -68,7 +68,7 @@ export const Description = styled(motion.p)`
   line-height: 40px;
   padding: 1.5rem 0;
 
-  @media (max-width: 1399px) {
+  @media (max-width: 1449px) {
     font-size: 28px;
     line-height: 35px;
   }
@@ -109,7 +109,7 @@ export const ListItem = styled.li`
     width: 35px;
   }
 
-  @media (max-width: 1399px) {
+  @media (max-width: 1449px) {
     font-size: 28px;
     line-height: 35px;
   }
