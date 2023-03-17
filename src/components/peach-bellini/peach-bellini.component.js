@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import PinkSrc from "../../../static/pink wave.svg";
 import { useEffect, useRef } from "react";
@@ -15,26 +15,33 @@ import {
 } from "./peach-bellini.style";
 
 const PeachBellini = () => {
-  const curve = useRef();
   const path = useRef();
+  const text = "lovely and peachy" + " ".repeat(3);
+  let textArr = text.repeat(4);
+  const h = document.documentElement;
+  const b = document.body;
+  let timer = 0;
+
+  const [neonText, setNeonText] = useState(textArr);
 
   useEffect(() => {
-    const h = document.documentElement;
-    const b = document.body;
+    setInterval(() => {
+      textArr = textArr.concat(text);
+      setNeonText(textArr);
+    }, 6000);
 
     if (path) {
-      document.addEventListener("scroll", (e) => {
+      setInterval(() => {
+        timer++;
         let percent =
-          ((h["scrollTop"] || b["scrollTop"]) /
+          (timer /
             ((h["scrollHeight"] || b["scrollHeight"]) - h.clientHeight)) *
-          100;
+          -100;
 
-        path.current.setAttribute("startOffset", percent * 30 - 1300);
-      });
-
-      return () => {};
+        path.current.setAttribute("startOffset", percent * 80);
+      }, 30);
     }
-  }, [curve, path]);
+  }, []);
 
   return (
     <>
@@ -44,7 +51,6 @@ const PeachBellini = () => {
           <div>
             <svg width="100vw" height="510px" viewBox="0 0 1200.72 89.55">
               <path
-                ref={curve}
                 id="curve"
                 fill="transparent"
                 d="M0,160 C420,280 700,0 1200,160 "
@@ -60,11 +66,7 @@ const PeachBellini = () => {
                   id="text-path"
                   ref={path}
                 >
-                  lovely and peachy&nbsp;&nbsp;&nbsp;lovely and
-                  peachy&nbsp;&nbsp;&nbsp;lovely and
-                  peachy&nbsp;&nbsp;&nbsp;lovely and
-                  peachy&nbsp;&nbsp;&nbsp;lovely and
-                  peachy&nbsp;&nbsp;&nbsp;lovely and peachy
+                  {neonText.replace(/ /g, "\u00A0")}
                 </textPath>
               </text>
             </svg>
