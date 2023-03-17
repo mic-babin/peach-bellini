@@ -18,13 +18,13 @@ const PeachBellini = () => {
   const path = useRef();
   const text = "lovely and peachy" + " ".repeat(3);
   let textArr = text.repeat(4);
-  const h = document.documentElement;
-  const b = document.body;
-  let timer = 0;
 
   const [neonText, setNeonText] = useState(textArr);
 
   useEffect(() => {
+    const h = document.documentElement;
+    const b = document.body;
+    let timer = 0;
     setInterval(() => {
       textArr = textArr.concat(text);
       setNeonText(textArr);
