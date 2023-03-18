@@ -91,10 +91,10 @@ const Hero = () => {
                 transition={{
                   times: opacityTimes,
                   type: spring,
-                  duration: 1.25,
+                  duration: 2.25,
                   delay: 0.25,
                   repeat: Infinity,
-                  repeatDelay: 3.1,
+                  repeatDelay: 1.3,
                 }}
               >
                 easy
@@ -105,10 +105,10 @@ const Hero = () => {
                 transition={{
                   times: opacityTimes,
                   type: spring,
-                  duration: 1.25,
+                  duration: 2.25,
                   delay: 0.3,
                   repeat: Infinity,
-                  repeatDelay: 3.1,
+                  repeatDelay: 1.3,
                 }}
               >
                 peezy
@@ -119,10 +119,10 @@ const Hero = () => {
                 transition={{
                   times: opacityTimes,
                   type: spring,
-                  duration: 1.25,
+                  duration: 2.25,
                   delay: 1.75,
                   repeat: Infinity,
-                  repeatDelay: 3.1,
+                  repeatDelay: 1.3,
                 }}
               >
                 peachy
@@ -133,10 +133,10 @@ const Hero = () => {
                 transition={{
                   times: opacityTimes,
                   type: spring,
-                  duration: 1.25,
+                  duration: 2.25,
                   delay: 1.7,
                   repeat: Infinity,
-                  repeatDelay: 3.1,
+                  repeatDelay: 1.3,
                 }}
               >
                 squeezy

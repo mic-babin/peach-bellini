@@ -39,7 +39,7 @@ export const H2 = styled(motion.h2)`
     line-height: 72px;
   }
 
-  @media (max-width: 567px) {
+  @media (max-width: 576px) {
     font-size: 50px;
     line-height: 60px;
   }
@@ -58,19 +58,19 @@ export const Paragraph = styled(motion.p)`
   }
 
   @media (max-width: 1449px) {
-    font-size: 30px;
-    line-height: 37px;
-  }
-  @media (max-width: 1199px) {
-    font-size: 28px;
+    font-size: 26px;
     line-height: 32px;
   }
+  /* @media (max-width: 1199px) {
+    font-size: 28px;
+    line-height: 32px;
+  } */
   @media (max-width: 991px) {
     padding-left: 0;
   }
 
   @media (max-width: 767px) {
-    font-size: 25px;
+    font-size: 24px;
     line-height: 27px;
     padding-left: 0;
   }

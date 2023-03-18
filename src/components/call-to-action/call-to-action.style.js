@@ -10,9 +10,17 @@ export const Wrapper = styled.div`
   background-size: 215px 230px;
   max-width: 100vw;
   padding: 200px 0;
+
+  @media (max-width: 1449px) {
+    padding-top: 200px;
+    padding-bottom: 170px;
+    background-size: 179px 191px;
+  }
+
   @media (max-width: 1199px) {
-    background-size: 20vw 21vw;
-    padding: 20vw 0;
+    padding-top: 15vw;
+    padding-bottom: 8.5vw;
+    background-size: 14.5vw 15vw;
   }
 `;
 
@@ -34,9 +42,16 @@ export const NeonText = styled.div`
   &:nth-of-type(3) {
     transform: rotate(-10deg) translateX(-40px);
   }
+  @media (max-width: 1449px) {
+    margin-top: -45px;
+    font-size: 80px;
+    line-height: 120px;
+  }
+
   @media (max-width: 1199px) {
-    font-size: 9vw;
-    line-height: 9vw;
+    margin-top: -2vw;
+    font-size: 8vw;
+    line-height: 11vw;
     text-shadow: 0 0 10px #fff, 0 0 21px #fff;
     transform: rotate(-10deg);
 
@@ -46,5 +61,9 @@ export const NeonText = styled.div`
     &:nth-of-type(3) {
       transform: rotate(-10deg) translateX(-4vw);
     }
+  }
+
+  @media (max-width: 767px) {
+    line-height: 14vw;
   }
 `;

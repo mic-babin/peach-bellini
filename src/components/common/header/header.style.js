@@ -2,16 +2,14 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const Logo = styled(motion.div)`
-  max-width: 300px;
-  margin-left: 80px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  @media (max-width: 1499px) {
-  }
+  max-width: 250px;
+  margin-left: 40px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 
-  @media (max-width: 567px) {
+  @media (max-width: 576px) {
     margin-left: 0;
-    max-width: 50vw;
+    max-width: 45vw;
   }
 `;
 
@@ -121,7 +119,7 @@ export const Wrapper = styled.div`
   max-width: 100vw;
   padding: 0;
 
-  @media (max-width: 567px) {
+  @media (max-width: 576px) {
     justify-content: center;
   }
 `;

@@ -16,19 +16,22 @@ export const Wrapper = styled.div`
   }
 
   @media (max-width: 1449px) {
-    font-size: 28px;
-    line-height: 35px;
-  }
-
-  @media (max-width: 1199px) {
-    font-size: 28px;
-    line-height: 32px;
+    padding-top: 270px;
+    font-size: 25px;
+    line-height: 30px;
   }
 
   @media (max-width: 767px) {
-    font-size: 25px;
-    line-height: 27px;
+    padding-top: 200px;
+    font-size: 22px;
+    line-height: 24px;
     padding-left: 0;
+  }
+
+  @media (max-width: 576px) {
+    padding-top: 170px;
+    font-size: 20px;
+    line-height: 22px;
   }
 `;
 
@@ -42,24 +45,32 @@ export const H1 = styled.h1`
   padding-bottom: 60px;
 
   @media (max-width: 1449px) {
-    font-size: 60px;
-    line-height: 72px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  @media (max-width: 1199px) {
+    font-size: 40px;
+    line-height: 48px;
   }
 `;
 
 export const H3 = styled.div`
   font-family: "DIN-Medium";
-  font-size: 35px;
+  font-size: 32px;
   padding-bottom: 5px;
   @media (max-width: 1449px) {
     font-size: 28px;
   }
 
   @media (max-width: 1199px) {
-    font-size: 28px;
+    font-size: 25px;
   }
 
   @media (max-width: 767px) {
-    font-size: 25px;
+    font-size: 22px;
+  }
+  @media (max-width: 576px) {
+    font-size: 20px;
   }
 `;

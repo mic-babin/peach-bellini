@@ -13,15 +13,20 @@ export const Wrapper = styled.div`
   max-width: 100vw;
   overflow: hidden;
 
+  @media (max-width: 1449px) {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+
   @media (max-width: 767px) {
     padding-bottom: 175px;
   }
 `;
 
 export const Logo = styled.div`
-  max-width: 300px;
+  max-width: 250px;
 
-  @media (max-width: 567px) {
+  @media (max-width: 576px) {
     max-width: 50vw;
   }
 `;
@@ -72,23 +77,18 @@ export const Contact = styled.div`
     }
   }
 
-  @media (max-width: 1499px) {
-    font-size: 28px;
-    line-height: 28px;
+  @media (max-width: 1449px) {
+    font-size: 25px;
+    line-height: 25px;
 
     span {
       padding: 0 1rem;
     }
   }
 
-  @media (max-width: 1299px) {
-    font-size: 25px;
-    line-height: 25px;
-  }
-
-  @media (max-width: 1299px) {
-    font-size: 28px;
-    line-height: 28px;
+  @media (max-width: 1199px) {
+    font-size: 22px;
+    line-height: 22px;
     flex-direction: column;
     span {
       padding: 1rem 1rem;
@@ -100,5 +100,11 @@ export const Contact = styled.div`
         border-top: none;
       }
     }
+  }
+
+  @media (max-width: 576px) {
+    font-size: 20px;
+    line-height: 20px;
+    flex-direction: column;
   }
 `;

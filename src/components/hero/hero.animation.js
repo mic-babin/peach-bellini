@@ -1,5 +1,5 @@
 export const opacity = {
-  opacity: [0.4, 0.4, 1, 1, 0.8, 0.8, 1, 1, 0.7, 0.7, 1, 1, 0.4],
+  opacity: [1, 1, 0.4, 0.4, 0.8, 0.8, 1, 1, 0.7, 0.7, 0.4, 0.4, 1],
 };
 
 export const opacityTimes = [

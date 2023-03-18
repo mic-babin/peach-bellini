@@ -27,9 +27,10 @@ export const H2 = styled(motion.h2)`
   @media (max-width: 1449px) {
     font-size: 120px;
     line-height: 104px;
+    margin-top: 150px;
 
     .img {
-      width: 160px;
+      width: 120px;
     }
   }
 
@@ -50,7 +51,7 @@ export const H2 = styled(motion.h2)`
     }
   }
 
-  @media (max-width: 567px) {
+  @media (max-width: 576px) {
     margin-top: 200px;
     font-size: 18vw;
     line-height: 22vw;
@@ -78,7 +79,7 @@ export const H1 = styled(motion.h1)`
     line-height: 40px;
   }
 
-  @media (max-width: 567px) {
+  @media (max-width: 576px) {
     font-size: 7vw;
     line-height: 8vw;
   }
@@ -112,12 +113,17 @@ export const Button = styled(Link)`
     background-color: #d04638;
   }
 
+  @media (max-width: 1449px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   @media (max-width: 1199px) {
     font-size: 23px;
     line-height: 23px;
   }
 
-  @media (max-width: 567px) {
+  @media (max-width: 576px) {
     font-size: 4.5vw;
     line-height: 4.5vw;
   }
@@ -132,15 +138,23 @@ export const Can = styled.div`
     height: 100%;
   }
 
-  @media (max-width: 1199px) {
+  @media (max-width: 1449px) {
+    margin-top: 100px;
+    height: auto;
+    width: 500px;
+    margin-bottom: 0px;
+  }
+
+  /* @media (max-width: 1199px) {
     margin-top: 200px;
     height: 600px;
     margin-bottom: 50px;
     margin-left: -25px;
-  }
+  } */
 
   @media (max-width: 991px) {
     margin-top: 100px;
+    width: auto;
     height: 600px;
     margin-bottom: 100px;
     margin-left: 10%;
@@ -151,7 +165,7 @@ export const Can = styled.div`
     height: 500px;
     margin-bottom: 50px;
   }
-  @media (max-width: 567px) {
+  @media (max-width: 576px) {
     margin-top: 75px;
     margin-left: 10vw;
     height: 90vw;
@@ -160,13 +174,14 @@ export const Can = styled.div`
 `;
 
 export const NeonWrapper = styled.div`
+  height: 0;
   position: absolute;
   top: 550px;
   left: 50px;
   transform: rotate(-10deg);
 
   @media (max-width: 1449px) {
-    transform: rotate(-10deg) translate(15px, -40px);
+    transform: rotate(-10deg) translate(45px, -200px);
   }
 
   @media (max-width: 991px) {
@@ -175,7 +190,7 @@ export const NeonWrapper = styled.div`
   @media (max-width: 767px) {
     transform: rotate(-10deg) translate(20vw, -400px);
   }
-  @media (max-width: 567px) {
+  @media (max-width: 576px) {
     transform: rotate(-10deg) translate(20vw, -400px);
   }
 `;
@@ -209,7 +224,7 @@ export const NeonWord = styled(motion.div)`
     line-height: 45px;
     margin-left: -25px;
   }
-  @media (max-width: 567px) {
+  @media (max-width: 576px) {
     margin-left: 0px;
     font-size: 10vw;
     line-height: 8vw;

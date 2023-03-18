@@ -1,6 +1,5 @@
 import React from "react";
-import BubbleSrc from "../../../static/bubble.svg";
-import PeachSrc from "../../../static/peach.svg";
+import BubbleSrc from "../../../static/cloud.png";
 import { motion } from "framer-motion";
 import { StaticImage } from "gatsby-plugin-image";
 import { Wrapper, CanWrapper, Container } from "./hard-seltzer.style";
@@ -55,17 +54,51 @@ const HardSeltzer = () => {
                 viewport={{ once: true }}
               >
                 <ListItem>
-                  <span>⚡</span>7% alcohol
+                  <span className="img">
+                    <StaticImage
+                      src="../../../static/lightning.png"
+                      alt="Lightning"
+                      placeholder="none"
+                      layout="constrained"
+                    />
+                  </span>
+                  7% alcohol
                 </ListItem>
                 <ListItem>
-                  <span>🔥</span>2 g of sugar
+                  <span className="img">
+                    <StaticImage
+                      src="../../../static/fire.png"
+                      alt="Fire"
+                      placeholder="none"
+                      layout="constrained"
+                    />
+                  </span>
+                  2 g of sugar
                 </ListItem>
                 <ListItem>
-                  <span>💦</span>3 g of carbs
+                  <span className="img">
+                    <StaticImage
+                      src="../../../static/water.png"
+                      alt="Water"
+                      placeholder="none"
+                      layout="constrained"
+                    />
+                  </span>
+                  3 g of carbs
                 </ListItem>
                 <ListItem>
-                  <span>🚀</span>Available at TheBeerStore{" "}
-                  <span className="d-inline d-lg-none d-xlg-inline">(TBS)</span>
+                  <span className="img">
+                    <StaticImage
+                      src="../../../static/rocket.png"
+                      alt="Rocket"
+                      placeholder="none"
+                      layout="constrained"
+                    />
+                  </span>
+                  Available at TheBeerStore{" "}
+                  <span className="d-inline d-none d-sm-inline d-lg-none d-xlg-inline">
+                    (TBS)
+                  </span>
                 </ListItem>
               </List>
             </div>
@@ -91,7 +124,14 @@ const HardSeltzer = () => {
                 </div>
                 <div className="floating">
                   <img className="bubble" src={BubbleSrc} alt="" />
-                  <span>🍓</span>
+                  <span className="img">
+                    <StaticImage
+                      src="../../../static/berry.png"
+                      alt="Berry"
+                      placeholder="none"
+                      layout="constrained"
+                    />
+                  </span>
                 </div>
               </CanWrapper>
               <CanWrapper>
@@ -103,9 +143,16 @@ const HardSeltzer = () => {
                     layout="constrained"
                   />
                 </div>
-                <div className="floating floating-2">
+                <div className="floating ">
                   <img className="bubble" src={BubbleSrc} alt="" />
-                  <span>🍒</span>
+                  <span className="img">
+                    <StaticImage
+                      src="../../../static/cherry.png"
+                      alt="Cherry"
+                      placeholder="none"
+                      layout="constrained"
+                    />
+                  </span>
                 </div>
               </CanWrapper>
               <CanWrapper>
@@ -117,10 +164,15 @@ const HardSeltzer = () => {
                     layout="constrained"
                   />
                 </div>
-                <div className="floating floating-3">
+                <div className="floating ">
                   <img className="bubble" src={BubbleSrc} alt="" />
-                  <span>
-                    <img src={PeachSrc} alt="" />
+                  <span className="img peach">
+                    <StaticImage
+                      src="../../../static/peach.svg"
+                      alt="Peach"
+                      placeholder="none"
+                      layout="constrained"
+                    />
                   </span>
                 </div>
               </CanWrapper>

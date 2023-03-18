@@ -131,16 +131,50 @@ const PeachBellini = () => {
                 viewport={{ once: true }}
               >
                 <ListItem>
-                  <span>⚡</span>7% alcohol
+                  <span className="img">
+                    <StaticImage
+                      src="../../../static/lightning.png"
+                      alt="Lightning"
+                      placeholder="none"
+                      layout="constrained"
+                    />
+                  </span>
+                  7% alcohol
                 </ListItem>
                 <ListItem>
-                  <span>👅</span>Made with vodka
+                  <span className="img">
+                    <StaticImage
+                      src="../../../static/lick.png"
+                      alt="Lick"
+                      placeholder="none"
+                      layout="constrained"
+                    />
+                  </span>
+                  Made with vodka
                 </ListItem>
                 <ListItem>
-                  <span>📍</span>Produced in Ontario
+                  <span className="img">
+                    <StaticImage
+                      src="../../../static/lolipop.png"
+                      alt="Lolipop"
+                      placeholder="none"
+                      layout="constrained"
+                    />
+                  </span>
+                  Produced in Ontario
                 </ListItem>
                 <ListItem>
-                  <span>🚀</span>Available at the LCBO
+                  <span>
+                    <span className="img">
+                      <StaticImage
+                        src="../../../static/rocket.png"
+                        alt="Rocket"
+                        placeholder="none"
+                        layout="constrained"
+                      />
+                    </span>
+                  </span>
+                  Available at the LCBO
                 </ListItem>
                 <ListItem>
                   <span>

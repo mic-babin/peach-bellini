@@ -34,6 +34,10 @@ export const Image = styled(motion.div)`
     width: 55vw;
     height: auto;
   }
+  @media (max-width: 576px) {
+    width: 75vw;
+    height: auto;
+  }
 `;
 export const H2 = styled(motion.h2)`
   padding-top: 25px;
@@ -57,7 +61,7 @@ export const H2 = styled(motion.h2)`
     font-size: 60px;
     line-height: 72px;
   }
-  @media (max-width: 567px) {
+  @media (max-width: 576px) {
     font-size: 45px;
     line-height: 57px;
   }
@@ -69,19 +73,19 @@ export const Description = styled(motion.p)`
   padding: 1.5rem 0;
 
   @media (max-width: 1449px) {
-    font-size: 28px;
-    line-height: 35px;
+    font-size: 26px;
+    line-height: 32px;
   }
 
   @media (max-width: 1199px) {
     font-size: 24px;
-    line-height: 32px;
-  }
-
-  @media (max-width: 767px) {
-    font-size: 25px;
     line-height: 27px;
   }
+
+  /* @media (max-width: 767px) {
+    font-size: 25px;
+    line-height: 27px;
+  } */
 `;
 export const List = styled(motion.ul)`
   padding-left: 0;
@@ -106,48 +110,43 @@ export const ListItem = styled.li`
   }
 
   span.img {
-    width: 35px;
+    width: 42px;
   }
 
   @media (max-width: 1449px) {
-    font-size: 28px;
-    line-height: 35px;
+    font-size: 26px;
+    line-height: 32px;
+
+    span.img {
+      width: 27px;
+    }
   }
 
   @media (max-width: 1199px) {
     font-size: 24px;
-    line-height: 32px;
+    line-height: 27px;
     span.img {
-      width: 28px;
+      width: 24px;
     }
   }
 
-  @media (max-width: 767px) {
-    font-size: 25px;
-    line-height: 27px;
+  @media (max-width: 576px) {
+    font-size: 20px;
+    line-height: 22px;
 
     span.img {
       margin-left: 2px;
-      width: 25px;
-    }
-  }
-
-  @media (max-width: 567px) {
-    font-size: 22px;
-    line-height: 23px;
-
-    span.img {
-      margin-left: 5px;
       width: 22px;
     }
   }
 
   @media (max-width: 389px) {
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 18px;
 
     span.img {
       width: 20px;
+      margin-left: 6px;
     }
   }
 `;
@@ -178,7 +177,7 @@ export const CurbTextWrapper = styled.div`
     font-size: 85px;
     line-height: 85px;
   }
-  @media (max-width: 567px) {
+  @media (max-width: 576px) {
     font-size: 100px;
     line-height: 100px;
   }

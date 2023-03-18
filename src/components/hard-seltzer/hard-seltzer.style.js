@@ -28,10 +28,20 @@ export const CanWrapper = styled.div`
 
   span {
     position: absolute;
-    top: -133px;
-    left: 92%;
-    font-size: 45px;
+    top: -143px;
+    left: 95%;
+    width: 45px;
 
+    &.peach {
+      width: 35px;
+      transform: translateX(5px);
+
+      img {
+        margin-top: 5px;
+
+        height: 35px;
+      }
+    }
     img {
       height: 45px;
     }
@@ -51,8 +61,19 @@ export const CanWrapper = styled.div`
     span {
       position: absolute;
       top: -58px;
-      left: 95%;
+      left: 105%;
       font-size: 37px;
+
+      &.peach {
+        width: 28px;
+        transform: translateX(4px);
+
+        img {
+          margin-top: 4px;
+
+          height: 28px;
+        }
+      }
 
       img {
         height: 37px;
@@ -60,8 +81,8 @@ export const CanWrapper = styled.div`
     }
   }
 
-  @media (max-width: 1299px) {
-    padding-top: 100px;
+  @media (max-width: 1449px) {
+    padding-top: 25px;
     .can {
       width: 169px;
     }
@@ -72,37 +93,48 @@ export const CanWrapper = styled.div`
       top: 0px;
     }
   }
+
+  @media (max-width: 991px) {
+    padding-top: 100px;
+  }
   @media (max-width: 767px) {
     padding-top: 100px;
     .can {
       width: 149px;
     }
     .bubble {
-      top: -25px;
+      top: 25px;
     }
     span {
-      top: 5px;
+      top: 60px;
       font-size: 30px;
-
-      img {
-        height: 30px;
-      }
     }
   }
-  @media (max-width: 567px) {
-    padding-top: 100px;
+  @media (max-width: 576px) {
+    padding-top: 150px;
     .can {
       width: 25vw;
     }
     .bubble {
-      top: calc(95px - 20vw);
+      top: calc(75px - 20vw);
     }
     span {
-      top: calc(120px - 20vw);
+      top: calc(95px - 20vw);
       font-size: 5vw;
 
+      &.peach {
+        width: 28px;
+        transform: translateX(4px);
+
+        img {
+          margin-top: 4px;
+
+          height: 5vw;
+        }
+      }
+
       img {
-        height: 5vw;
+        height: 7vw;
       }
     }
   }
