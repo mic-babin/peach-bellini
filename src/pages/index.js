@@ -9,28 +9,34 @@ import CallToAction from "../components/call-to-action/call-to-action.component"
 import Footer from "../components/common/footer/footer.component";
 import styled from "styled-components";
 import { SEO } from "../components/common/seo";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import AgeWall from "../components/common/age-wall/age-wall.component";
 import Modal from "react-modal";
 
 export default function Home() {
   const [modalIsOpen, setIsOpen] = useState(true);
-  console.log(modalIsOpen);
 
-  function closeModal() {
-    setIsOpen(false);
-  }
+  const closeModal = () => setIsOpen(false);
+
+  useEffect(() => {
+    if (localStorage.getItem("bellini-age")) setIsOpen(false);
+  });
 
   return (
     <Wrapper>
-      {!modalIsOpen && <Header />}
-      <Hero />
-      <About />
-      <PeachBellini />
-      <HardSeltzer />
-      <CallToAction />
-      <Footer />
+      {!modalIsOpen && (
+        <>
+          <Header />
+          <Hero />
+          <About />
+          <PeachBellini />
+          <HardSeltzer />
+          <CallToAction />
+          <Footer />
+        </>
+      )}
+
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
@@ -74,6 +80,6 @@ const customStyles = {
     position: "fixed",
   },
   overlay: {
-    backgroundColor: "#f0cb6e",
+    backgroundColor: "rgb(239, 192, 142)",
   },
 };

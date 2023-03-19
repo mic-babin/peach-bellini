@@ -12,6 +12,7 @@ export const Overlay = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(to bottom, #f0cb6e, #f2d16f, #fff3b2);
 `;
 
 export const Text = styled.div`
@@ -72,14 +73,13 @@ export const Button = styled.div`
 `;
 
 export const Warning = styled.div`
-  padding-top: 40px;
-  font-size: 30px;
-  line-height: 45px;
+  font-size: 20px;
+  line-height: 20px;
   font-family: "Lemon-Milk-Regula";
 
   text-align: center;
   @media (max-width: 576px) {
-    font-size: 6vw;
-    line-height: 8vw;
+    font-size: 4vw;
+    line-height: 4vw;
   }
 `;

@@ -4,6 +4,7 @@ import { Overlay, Text, Button, Warning } from "./age-wall.styles";
 const AgeWall = ({ setIsOpen }) => {
   const close = () => {
     setIsOpen(false);
+    localStorage.setItem("bellini-age", true);
   };
   const [warning, setWarning] = useState(false);
 
@@ -18,24 +19,28 @@ const AgeWall = ({ setIsOpen }) => {
         drinking age?
       </Text>
       <div className="d-flex">
-        <Button
-          onClick={() => {
-            close();
-          }}
-        >
-          Yes
-        </Button>
-        <Button
-          onClick={() => {
-            showWarning();
-          }}
-        >
-          No
-        </Button>
+        {!warning && (
+          <>
+            <Button
+              onClick={() => {
+                close();
+              }}
+            >
+              Yes
+            </Button>
+            <Button
+              onClick={() => {
+                showWarning();
+              }}
+            >
+              No
+            </Button>
+          </>
+        )}
       </div>
       {warning && (
         <Warning className="px-5">
-          You are not old enough to view this content.
+          **You are not old enough to view this content.
         </Warning>
       )}
     </Overlay>
