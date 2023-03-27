@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { Link } from "gatsby";
+import { motion } from "framer-motion";
 
-export const Overlay = styled.div`
+export const Overlay = styled(motion.div)`
   position: absolute;
   top: 0;
   left: 0;
@@ -9,15 +10,19 @@ export const Overlay = styled.div`
   height: 100vh;
   width: 100%;
   overflow: hidden;
+  display: flex;
+  justify-content: end;
 `;
 
-export const MenuLinks = styled.div`
+export const MenuLinks = styled(motion.div)`
+  width: 360px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   align-items: center;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
 `;
 
 export const MenuLink = styled(Link)`

@@ -79,10 +79,16 @@ export const Burger = styled(motion.div)`
         &:first-of-type {
           transform: rotate(45deg);
           top: 5px;
+          background-color: rgb(249, 238, 127);
+          box-shadow: 0 0 6px rgba(245, 237, 150, 0.5),
+            0 0 10px rgba(245, 237, 150, 0.5), 0 0 21px rgba(245, 237, 150, 0.5);
         }
         &:last-of-type {
           transform: rotate(-45deg);
           bottom: 5px;
+          background-color: rgb(249, 238, 127);
+          box-shadow: 0 0 6px rgba(245, 237, 150, 0.5),
+            0 0 10px rgba(245, 237, 150, 0.5), 0 0 21px rgba(245, 237, 150, 0.5);
         }
       }
     }
