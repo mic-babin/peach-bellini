@@ -34,11 +34,21 @@ export const Logo = styled.div`
 export const Moderation = styled.img`
   position: absolute;
   bottom: 60px;
-  right: 30px;
-  max-height: 85px;
+  right: 20px;
+  max-height: 65px;
 
-  @media (max-width: 1499px) {
+  @media (max-width: 1449px) {
+    max-height: 65px;
+    bottom: 50px;
+  }
+
+  @media (max-width: 1249px) {
+    max-height: 50px;
+    bottom: 50px;
+  }
+  @media (max-width: 1199px) {
     max-height: 70px;
+    bottom: 50px;
   }
   @media (max-width: 767px) {
     right: 50%;
@@ -77,7 +87,7 @@ export const Contact = styled.div`
     }
   }
 
-  @media (max-width: 1449px) {
+  @media (max-width: 1649px) {
     font-size: 25px;
     line-height: 25px;
 

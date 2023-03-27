@@ -187,7 +187,7 @@ const PeachBellini = () => {
                       />
                     </span>
                   </span>
-                  MADE WITH Natural Flavour
+                  Made with Natural Flavour
                 </ListItem>
               </List>
             </div>

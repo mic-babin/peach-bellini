@@ -1,6 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
-import ModerationSrc from "../../../../static/moderation.svg";
+import ModerationSrc from "../../../../static/moderation.png";
 import { Moderation, Wrapper, Logo, Contact } from "./footer.style";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -27,7 +27,9 @@ const Footer = () => {
         </Logo>
       </Link>
       <Contact>
-        <span>CONTACT US</span>
+        <span>
+          <a href="mailto:sac@groupeomnni.com">CONTACT US</a>CONTACT US
+        </span>
         <span>
           <a href="mailto:sac@groupeomnni.com">sac@groupeomnni.com</a>
         </span>
